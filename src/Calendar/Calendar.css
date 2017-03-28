@@ -1,0 +1,56 @@
+.calendar {
+	text-align: center;
+  vertical-align: baseline;
+  min-width: 230px;
+  height: 100%;
+}
+
+.calendar__month {
+  height: calc(100% - 40px);
+}
+
+.calendar__month > thead > tr > th {
+  text-align: center;
+}
+
+.calendar__month > tbody > tr > td {
+  vertical-align: middle;
+}
+
+.calendar__month > tbody > tr > td:hover {
+  /* important чтобы перекрыть inline цвет */
+	background-color: red !important;
+  color: white;
+	cursor: pointer;
+}
+
+.calendar__month_outer-day {
+  color: #d9edf7;
+}
+
+.calendar__month_selected-day {
+  background-color: red;
+  color: white
+}
+
+.calendar__navbar {
+  font-size: 1.5rem;
+  position: relative;
+  text-align: center;
+  height: 40px;
+  min-height: 2rem;
+}
+
+.calendar__navbar__arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 15%;
+}
+
+.calendar__navbar__arrow-left {
+  left: 10px;
+}
+
+.calendar__navbar__arrow-right {
+  right: 10px;
+}
